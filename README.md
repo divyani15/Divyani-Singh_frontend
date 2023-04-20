@@ -1,5 +1,5 @@
 1. Explain what the simple List component does.
-Ans: The List component in this code displays a list of items passed to it as a prop. It renders a list of items in an unordered list format. Each item in the list is represented by an `<li>` element. The background color of the `<li>` element depends on whether it is currently selected or not.
+Ans: The List component in this code displays a list of items passed to it as a prop. It renders a list of items in an unordered list format. Each item in the list is represented by an `<li>`element. The background color of the `<li>` element depends on whether it is currently selected or not.
 The List component also defines a function called handleClick that updates the selected index of the clicked item in the parent WrappedListComponent. This function is passed as a prop to each SingleListItem component and is called whenever an item is clicked.
 
 The List component uses the useState hook to define the selectedIndex state and the useEffect hook to reset the selectedIndex state to null whenever the items prop changes. This ensures that if the items in the list change, the selected index is reset and no item is selected by default.
@@ -15,4 +15,4 @@ Thirdly, the items prop type in WrappedListComponent is defined using PropTypes.
 Fourthly, in the SingleListItem component, the onClickHandler function is not called properly. To avoid it being called immediately on rendering, it should be wrapped in arrow function.
 Addressing these issues will ensure that the code works correctly and renders a list of items with the correct background color for the selected item.
 
-3. For the modified code,refer 'app.js'!
+3. For the modified code,refer 'app.js'!!
