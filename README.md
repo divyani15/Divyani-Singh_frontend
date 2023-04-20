@@ -6,7 +6,7 @@ The List component uses the useState hook to define the selectedIndex state and 
 To optimize performance, the WrappedListComponent and SingleListItem components are memoized using the memo higher-order component. This prevents unnecessary re-renders when the props of these components do not change.
 
 
-2.What problems / warnings are there with code?
+2. What problems / warnings are there with code?
 Ans:There are several issues in this code that need to be addressed for it to work correctly.
 
 Firstly, in the WrappedListComponent, the useState hook is called incorrectly with selectedIndex as the setter and setSelectedIndex as the state value. This should be corrected to [selectedIndex, setSelectedIndex].
@@ -15,4 +15,4 @@ Thirdly, the items prop type in WrappedListComponent is defined using PropTypes.
 Fourthly, in the SingleListItem component, the onClickHandler function is not called properly. To avoid it being called immediately on rendering, it should be wrapped in arrow function.
 Addressing these issues will ensure that the code works correctly and renders a list of items with the correct background color for the selected item.
 
-3.For the modified code,refer 'app.js'!!
+3. For the modified code,refer 'app.js'!!
