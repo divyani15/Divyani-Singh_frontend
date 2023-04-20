@@ -47,13 +47,7 @@ const WrappedListComponent = ({
   return (
     <ul style={{ textAlign: 'left' }}>
       {items.map((item, index) => (
-        <SingleListItem
-          key={index}
-          onClickHandler={handleClick}
-          text={item.text}
-          index={index}
-          isSelected={selectedIndex === index}
-        />
+        <SingleListItem key={index} onClickHandler={handleClick} text={item.text} index={index} isSelected={selectedIndex === index} />
       ))}
     </ul>
   );
