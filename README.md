@@ -15,4 +15,4 @@ Thirdly, the items prop type in WrappedListComponent is defined using PropTypes.
 Fourthly, in the SingleListItem component, the onClickHandler function is not called properly. To avoid it being called immediately on rendering, it should be wrapped in arrow function.
 Addressing these issues will ensure that the code works correctly and renders a list of items with the correct background color for the selected item.
 
-3. For the modified code,refer 'app.js'!!
+3. For the modified code,refer 'app.js'!
